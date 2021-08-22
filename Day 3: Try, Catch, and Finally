@@ -1,0 +1,11 @@
+function reverseString(s) {
+    try{
+    const a = s.split("");
+    a.reverse();
+    console.log(a.join(""));
+    }catch (e) {
+        console.log("s.split is not a function");
+        console.log(s);
+    } 
+}
+
