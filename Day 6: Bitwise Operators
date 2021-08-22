@@ -1,0 +1,13 @@
+function getMaxLessThanK(n, k){
+
+    var max = 0
+    for(var i = 0; i <= n; i++){
+        for(var j=i+1; j <= n; j++){
+            var x = i&j;
+            if(x > max & x < k){
+                max = x;
+            }
+        }
+    }
+    return max;
+}
